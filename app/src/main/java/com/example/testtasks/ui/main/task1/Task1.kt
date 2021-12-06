@@ -22,13 +22,35 @@ n = 2
 2nd directory from the end (indexed from 0) is “home”. So we replace it to “HOME”. Replace only letters!
 Output:  “users\ted\HOME\projects\kaspi”
 */
-//
+
+
 //fun main(args: Array<String>) {
 // print("Hello!")
 //}
 
 /*
 3)
+Every valid email consists of a local name and a domain name, separated by the '@' sign.
+Besides lowercase letters, the email may contain one or more '.' or '+'.
+
+For example, in "alice@leetcode.com", "alice" is the local name, and "leetcode.com" is the domain name.
+If you add periods '.' between some characters in the local name part of an email address,
+mail sent there will be forwarded to the same address without dots in the local name.
+Note that this rule does not apply to domain names.
+
+For example, "alice.z@leetcode.com" and "alicez@leetcode.com" forward to the same email address.
+If you add a plus '+' in the local name, everything after the first plus sign will be ignored.
+This allows certain emails to be filtered. Note that this rule does not apply to domain names.
+
+For example, "m.y+name@email.com" will be forwarded to "my@email.com".
+It is possible to use both of these rules at the same time.
+
+Given an array of strings emails where we send one email to each email[i],
+return the number of different addresses that actually receive mails.
+*/
+
+/*
+4)
 Given an integer array nums and an integer k, return the kth largest element in the array.
 Note that it is the kth largest element in the sorted order, not the kth distinct element.
 
@@ -47,7 +69,7 @@ Output: 4
 //}
 
 /*
-4)
+5)
 Given a signed 32-bit integer x, return x with its digits reversed. If reversing x causes the value to go outside the signed 32-bit integer range [-231, 231 - 1], then return 0.
 Assume the environment does not allow you to store 64-bit integers (signed or unsigned).
 
