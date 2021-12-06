@@ -1,4 +1,4 @@
-package com.example.myapplication.ui.main.mock
+package com.example.testtasks.ui.main.mock
 
 import com.example.testtasks.ui.main.task4.Task4Fragment
 import kotlin.properties.ReadOnlyProperty

@@ -1,7 +1,5 @@
 package com.example.testtasks.ui.main.mock
 
-import com.example.myapplication.ui.main.mock.ProfileInfo
-
 class LocalDataSource {
     fun getProfile(id: Long): ProfileInfo {
         return ProfileInfo("Chingiz","19","+77775554433")

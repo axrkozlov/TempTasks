@@ -6,8 +6,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.example.myapplication.ui.main.mock.DataApi
-import com.example.myapplication.ui.main.mock.ProfileInfo
+import com.example.testtasks.ui.main.mock.DataApi
+import com.example.testtasks.ui.main.mock.ProfileInfo
 import com.example.testtasks.R
 import kotlinx.android.synthetic.main.main_fragment.*
 
@@ -15,6 +15,7 @@ class Task2Fragment : Fragment() {
 
     //What's wrong with the code?
     //Please, make the code better.
+    //Implement update function
 
     companion object {
         fun newInstance() = Task2Fragment()
@@ -56,6 +57,10 @@ class Task2Fragment : Fragment() {
             ageEditText.setText(profiles!![i].age)
             phoneNumberEditText.setText(profiles!![i].phoneNumber)
         }
+    }
+
+    private fun updateProfile(){
+
     }
 
 }

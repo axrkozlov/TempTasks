@@ -1,4 +1,4 @@
-package com.example.myapplication.ui.main.task3
+package com.example.testtasks.ui.main.task3
 
 import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.example.myapplication.ui.main.task3.Task3ViewModel
 import com.example.testtasks.R
 
 class Task3Fragment : Fragment() {
