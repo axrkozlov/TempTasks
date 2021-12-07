@@ -13,13 +13,12 @@ import kotlinx.android.synthetic.main.main_fragment.*
 
 class Task2Fragment : Fragment() {
 
-    //What's wrong with the code?
-    //Please, make the code better.
-    //Implement update function
-
-    companion object {
-        fun newInstance() = Task2Fragment()
-    }
+    // #TrashCode
+    // This code displays cached user profiles on screen while loading actual data,
+    // after loading it shows actual data on screen and update cashed data.
+    // What's wrong with the code?
+    // 1. Please, make the code better.
+    // 2. Please, implement update function.
 
     var profiles:List<ProfileInfo>? = null
 
@@ -31,11 +30,13 @@ class Task2Fragment : Fragment() {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
         progressBar.visibility = View.VISIBLE
-        //Get data from cache while loading
-        val preferences = activity?.getSharedPreferences("pref", Context.MODE_PRIVATE)
-        nameEditText.setText(preferences?.getString("name",""))
-        ageEditText.setText(preferences?.getString("age",""))
-        phoneNumberEditText.setText(preferences?.getString("phoneNumber",""))
+        //Show cached profiles on display while loading
+        for (i in 1..10) {
+            val preferences = activity?.getSharedPreferences("pref", Context.MODE_PRIVATE)
+            nameEditText.setText(preferences?.getString("name", ""))
+            ageEditText.setText(preferences?.getString("age", ""))
+            phoneNumberEditText.setText(preferences?.getString("phoneNumber", ""))
+        }
         val api = DataApi()
         object : Thread() {
             override fun run() {
@@ -48,19 +49,27 @@ class Task2Fragment : Fragment() {
     }
 
     private fun saveProfilesCache() {
+        //Save a profiles to cache
+        var names = ""
+        var ages = ""
+        var numbers = ""
         for (i in 1..profiles!!.size) {
             val preferences = activity?.getSharedPreferences("pref", Context.MODE_PRIVATE)
-            preferences?.edit()?.putString("name",profiles!![i].name)!!.apply()
-            preferences.edit()?.putString("age",profiles!![i].age)!!.apply()
-            preferences.edit()?.putString("number",profiles!![i].phoneNumber)!!.apply()
-            nameEditText.setText(profiles!![i].name)
-            ageEditText.setText(profiles!![i].age)
-            phoneNumberEditText.setText(profiles!![i].phoneNumber)
+            names = names + profiles!![i].name + ","
+            preferences?.edit()?.putString("name",names)!!.apply()
+            ages = names + profiles!![i].age + ","
+            preferences.edit()?.putString("age",ages)!!.apply()
+            numbers = names + profiles!![i].phoneNumber + ","
+            preferences.edit()?.putString("number",numbers)!!.apply()
+            //Update all profiles on display
+            nameEditText.setText(names)
+            ageEditText.setText(ages)
+            phoneNumberEditText.setText(numbers)
         }
     }
 
     private fun updateProfile(){
-
+        //TODO:Implement
     }
 
 }

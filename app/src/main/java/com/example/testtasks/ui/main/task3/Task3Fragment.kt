@@ -11,14 +11,10 @@ import com.example.testtasks.R
 
 class Task3Fragment : Fragment() {
 
-    // Get UserProfiles from mock local data source
-    // Implement extension function to map list of user profiles to list of user names + user phones
-    // Bind data to a TextView using html tags: bold username text, grey colored phone number
-
-
-    companion object {
-        fun newInstance() = Task3Fragment()
-    }
+    // This code displays user profiles on screen
+    // 1. Get UserProfiles from mock local data source
+    // 2. Implement extension function to map list of user profiles to list of user names + user phones
+    // 3. Bind data list to one TextView with bold username text, grey colored phone number
 
     private lateinit var viewModel: Task3ViewModel
 
