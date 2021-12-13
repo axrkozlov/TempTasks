@@ -13,12 +13,16 @@ import kotlinx.android.synthetic.main.main_fragment.*
 
 class Task2Fragment : Fragment() {
 
-    // #TrashCode
-    // This code displays cached user profiles on screen while loading actual data,
-    // after loading it shows actual data on screen and update cashed data.
-    // What's wrong with the code?
-    // 1. Please, make the code better.
-    // 2. Please, implement update function.
+
+/*
+
+This code, written quickly by junior, needs to be refactored
+The code goal is to display cached user profiles on screen while loading actual data,
+after loading it shows actual data on screen and update cashed data.
+1. Describe all wrong things in the code?
+2. Please, make the code cleaner with the single responsibility principle.
+3. Please, implement update function.
+*/
 
     var profiles:List<ProfileInfo>? = null
 
