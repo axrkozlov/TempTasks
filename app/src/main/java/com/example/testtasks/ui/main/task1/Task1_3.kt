@@ -12,7 +12,9 @@ If there is '+' in the local name, everything after the first plus sign will be 
 (example: "m.y+name@email.com" will be forwarded to "my@email.com")
 
 Given a list of emails, we send one email to each address in the list.
+
 How many different addresses actually receive mails?
+
 */
 
 

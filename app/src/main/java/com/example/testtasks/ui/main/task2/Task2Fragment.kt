@@ -19,8 +19,8 @@ class Task2Fragment : Fragment() {
 This code, written quickly by junior, needs to be refactored
 The code goal is to display cached user profiles on screen while loading actual data,
 after loading it shows actual data on screen and update cashed data.
-1. Describe all wrong things in the code?
-2. Please, make the code cleaner with the single responsibility principle.
+1. Describe all wrong things in the code
+2. Please, make the code cleaner using best practices
 3. Please, implement update function.
 */
 
