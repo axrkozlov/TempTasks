@@ -14,5 +14,6 @@ Output: 4
 */
 
 fun main(args: Array<String>) {
+    println("Solution:")
 
 }

@@ -22,5 +22,6 @@ please don't use reverse method of string
 
 
 fun main(args: Array<String>) {
+    println("Solution:")
 
 }

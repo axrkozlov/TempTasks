@@ -13,5 +13,6 @@ Output:  “users\ted\HOME\projects\kaspi”
 */
 
 fun main(args: Array<String>) {
+    println("Solution:")
 
 }

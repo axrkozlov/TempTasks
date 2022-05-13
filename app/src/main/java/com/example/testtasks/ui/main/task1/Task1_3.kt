@@ -19,5 +19,6 @@ How many different addresses actually receive mails?
 
 
 fun main(args: Array<String>) {
+    println("Solution:")
 
 }

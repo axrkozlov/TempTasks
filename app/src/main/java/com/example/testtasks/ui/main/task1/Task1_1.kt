@@ -8,5 +8,6 @@ The task about a clean code and the DRY (Don't repeat yourself) principle
  */
 
 fun main(args: Array<String>) {
+    println("Solution:")
 
 }
